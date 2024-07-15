@@ -15,9 +15,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['otp_expiry'] = time() + 300; // OTP expires in 5 minutes
 
     // Twilio credentials
-    $sid = 'AC10f7809f383085300d4e52c84a29df7c';
-    $token = '8f0518ba289e5335ef3a2fb74d6692a8';
-    $twilioNumber = '12088861522';
+   $sid = 'your_account_sid';
+$token = 'your_auth_token';
+$twilioNumber = 'your_twilio_phone_number';
+
 
     $client = new Client($sid, $token);
 
